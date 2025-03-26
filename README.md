@@ -12,9 +12,11 @@ This project processes real air quality data in `.parquet` format (e.g. download
   - Metadata (units, country, aggregation type)
 - Chunked and compressed for performance
 
+It uses **Voila** to visualize the .h5 data in a web application.
+
 ---
 
-## 🚀 How to Use
+## How to Use
 
 ### 1. Install Dependencies
 
@@ -29,4 +31,11 @@ Put all your .parquet files in a folder, for example: data/
 
 ```bash
 python main.py --input_path data/ --output_path hdf5_data/air_quality_data.h5
+```
+
+### To visualize:
+
+run the following from the root directory
+```bash
+voila ./explore/gui_explorer_voila.ipynb
 ```
