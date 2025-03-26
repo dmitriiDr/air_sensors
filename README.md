@@ -22,6 +22,7 @@ It uses **Voila** to visualize the .h5 data in a web application.
 
 ```bash
 pip install -r requirements.txt
+pip install -e .
 ```
 ### 2. Prepare Input Files
 
